@@ -1,0 +1,45 @@
+html{
+    height:100%;
+    width: 100%;
+}
+
+body{
+    padding: 0px 100px;
+    margin: 0px;
+    background-color: #EDEDED;
+    padding-bottom: 50px;
+}
+
+hr{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.attention{
+    color:red;
+    background-color: #c8c8c8;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.explain{
+    color:#CD3700;
+    background-color: #c8c8c8;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.active{
+    border:2px dotted #ff0000;
+}
+
+.text-danger{
+    color:#ff0000;
+}
+
+
+
