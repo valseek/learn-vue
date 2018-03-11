@@ -1,7 +1,7 @@
 <template>
     <div style="height: 100% ; width: 100%;" ref="outer-container">
         <h1> {{ title }} </h1>
-        <guide-template-conditional></guide-template-conditional>
+        <guide-template-list></guide-template-list>
     </div>
 </template>
 
@@ -10,9 +10,11 @@
     import GuideTemplateComputed from "../components/test/guide/guide-template-computed";
     import GuideTemplateClassAndStyle from "../components/test/guide/guide-template-class-and-style";
     import GuideTemplateConditional from "../components/test/guide/guide-template-conditional";
+    import GuideTemplateList from "../components/test/guide/guide-template-list";
 
     export default {
         components: {
+            GuideTemplateList,
             GuideTemplateConditional,
             GuideTemplateClassAndStyle,
             GuideTemplateComputed,
