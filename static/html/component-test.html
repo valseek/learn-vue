@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js" type="application/javascript"></script>
+</head>
+<body>
+<h1>inner</h1>
+<div id="app">
+    <table  style="border: 2px solid black; margin:10px;">
+        <tbody>
+            <tr is="html-table-child-tr"></tr>
+        </tbody>
+    </table>
+
+    <table  style="border: 2px solid black; margin:10px;">
+        <tbody>
+            <html-table-child-tr></html-table-child-tr>
+        </tbody>
+    </table>
+</div>
+
+<script type="application/javascript">
+    (function () {
+
+        var HtmlTableChildTr = {
+            template: "<tr> dom 模板测试 <a target='_blank' href='https://cn.vuejs.org/v2/guide/components.html#DOM-%E6%A8%A1%E6%9D%BF%E8%A7%A3%E6%9E%90%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9'> 中文文档地址 </a> </tr>",
+        };
+
+        Vue.component('html-table-child-tr', HtmlTableChildTr);
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                message: "aaa",
+            }
+        });
+    })();
+</script>
+
+
+</body>
+</html>
