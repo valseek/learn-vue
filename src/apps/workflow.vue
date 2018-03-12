@@ -1,7 +1,9 @@
 <template>
     <div style="height: 100% ; width: 100%;" ref="outer-container">
         <h1> {{ title }} </h1>
-        <guide-template-list></guide-template-list>
+        <guide-template-forms></guide-template-forms>
+        <hr/>
+
     </div>
 </template>
 
@@ -11,9 +13,13 @@
     import GuideTemplateClassAndStyle from "../components/test/guide/guide-template-class-and-style";
     import GuideTemplateConditional from "../components/test/guide/guide-template-conditional";
     import GuideTemplateList from "../components/test/guide/guide-template-list";
+    import GuideTemplateEvents from "../components/test/guide/guide-template-events";
+    import GuideTemplateForms from "../components/test/guide/guide-template-forms";
 
     export default {
         components: {
+            GuideTemplateForms,
+            GuideTemplateEvents,
             GuideTemplateList,
             GuideTemplateConditional,
             GuideTemplateClassAndStyle,
