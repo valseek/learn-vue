@@ -1,7 +1,7 @@
 <template>
     <div style="height: 100% ; width: 100%;" ref="outer-container">
         <h1> {{ title }} </h1>
-        <guide-template-components></guide-template-components>
+        <type-practice></type-practice>
         <hr/>
 
     </div>
@@ -16,9 +16,11 @@
     import GuideTemplateEvents from "../components/test/guide/guide-template-events";
     import GuideTemplateForms from "../components/test/guide/guide-template-forms";
     import GuideTemplateComponents from "../components/test/guide/guide-template-components";
+    import TypePractice from "../components/tmp/type-practice";
 
     export default {
         components: {
+            TypePractice,
             GuideTemplateComponents,
             GuideTemplateForms,
             GuideTemplateEvents,
