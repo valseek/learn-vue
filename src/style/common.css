@@ -54,5 +54,12 @@ hr{
 
 }
 
+.example{
+    border:1px black dotted;
+    padding: 30px;
+    border-radius:15px;
+
+}
+
 
 
